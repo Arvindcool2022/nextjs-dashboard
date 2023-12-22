@@ -1,4 +1,9 @@
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
 export default async function Page() {
   const response = await fetch('https://dummyjson.com/products/1');
   const data = await response.json();
